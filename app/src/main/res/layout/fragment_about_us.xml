@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:clickable="true"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/developer_info">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/joey"
+            android:id="@+id/joey_pic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/joey_pic"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="This app is made by R H Sai Teja as part of Internshala's Online Android Training Project"
+            android:id="@+id/about_developer"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developer_info"
+        android:id="@+id/app_version"
+        android:layout_centerHorizontal="true"
+        android:text="App version: 1.0"/>
+</RelativeLayout>
